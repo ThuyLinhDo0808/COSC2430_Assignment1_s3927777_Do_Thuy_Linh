@@ -1,0 +1,63 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Do Thuy Linh
+ID: Your student s3927777
+Acknowledgement:  
+OpenAI (2023) ChatGPT (May 24 version) [Large language model], accessed 11 August 2023. https://chat.openai.com/share/81f2e81f-f137-41b6-9881-39af1672ae3c
+Google Fonts (2011) Mulish, Pacifico, Moirai, Rubik, Google Fonts website, accessed 19 July 2023. https://fonts.google.com/
+Mr.Web Designer (2021) 'Create A Responsive E-Commerce Flower Shop Website Design Using Pure HTML & CSS Only' [video], Mr.Web Designer, YouTube website, accessed 19 July 2023. https://www.youtube.com/watch?v=cLOT0APQzDs&t=1325s
+W3Schools (n.d.) CSS Navigation Bar, W3Schools website, accessed 21 July 2023. https://www.w3schools.com/css/css_navbar.asp
+W3Schools (n.d.) CSS Icons, W3Schools website, accessed 21 July 2023. https://www.w3schools.com/css/css_icons.asp
+W3Schools (n.d.) CSS Forms, W3Schools website, accessed 27 July 2023. https://www.w3schools.com/css/css_form.asp
+Fonticons (n.d.) Font Awesome, Font Awesome website, accessed 23 July 2023. https://fontawesome.com/search
+Amazon (n.d.) Books, Amazon website, accessed 17 July. https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155
+Don Bookstore (n.d.) Privacy Policy/Terms of Use, Don Bookstore website, accessed 11 August 2023. https://www.donbookstore.com/donbook/site_terms_of_use.asp 
+*/
+
+.policy{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 20px;
+    color: rgb(92, 64, 51);
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 6rem;
+}
+h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+p{
+    line-height: 1.5;
+}
+.terms-of-use{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .content{
+        font-size: 70%;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .content{
+        font-size: 60%;
+    }
+    .title{
+        font-size: 3rem;
+        padding-top: 8rem;
+    }
+}

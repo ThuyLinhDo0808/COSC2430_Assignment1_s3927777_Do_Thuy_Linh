@@ -1,0 +1,129 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Do Thuy Linh
+ID: Your student s3927777
+Acknowledgement:  
+OpenAI (2023) ChatGPT (May 24 version) [Large language model], accessed 11 August 2023. https://chat.openai.com/share/81f2e81f-f137-41b6-9881-39af1672ae3c
+Google Fonts (2011) Mulish, Pacifico, Moirai, Rubik, Google Fonts website, accessed 19 July 2023. https://fonts.google.com/
+Mr.Web Designer (2021) 'Create A Responsive E-Commerce Flower Shop Website Design Using Pure HTML & CSS Only' [video], Mr.Web Designer, YouTube website, accessed 19 July 2023. https://www.youtube.com/watch?v=cLOT0APQzDs&t=1325s
+W3Schools (n.d.) CSS Navigation Bar, W3Schools website, accessed 21 July 2023. https://www.w3schools.com/css/css_navbar.asp
+W3Schools (n.d.) CSS Icons, W3Schools website, accessed 21 July 2023. https://www.w3schools.com/css/css_icons.asp
+W3Schools (n.d.) CSS Forms, W3Schools website, accessed 27 July 2023. https://www.w3schools.com/css/css_form.asp
+Fonticons (n.d.) Font Awesome, Font Awesome website, accessed 23 July 2023. https://fontawesome.com/search
+Amazon (n.d.) Books, Amazon website, accessed 17 July. https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155
+Don Bookstore (n.d.) Privacy Policy/Terms of Use, Don Bookstore website, accessed 11 August 2023. https://www.donbookstore.com/donbook/site_terms_of_use.asp
+*/
+
+.book-detail .box-container{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+.book-detail .box-container .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.book-detail .box-container .box .image{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    position: relative;
+    border: .1rem solid rgba(0,0,0,.1);
+    width: 24rem;
+    height: 26rem;
+}
+.large-img img{
+    width: 15rem;
+    height: 22rem;
+}
+.small-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px 10px;
+    margin-left: 3rem;
+}
+.small-img img{
+        width: 4rem;
+        height: 6rem;
+}
+.book-detail .box-container .box .price{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(58, 49, 44);
+    padding: .5rem 0;
+    padding-top: 0.5rem;
+    line-height: 1.5;
+}
+.book-detail .box-container .box .price span{
+    font-size: 1.75rem;
+    color: rgb(158, 133, 121);
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.book-detail .box-container .book-info{
+    padding-top: 1.5rem;
+}
+.book-detail ul.breadcrumb{
+    padding: 10px 16px;
+    padding-top: 4.5rem;
+    list-style: none;
+}
+.book-detail ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+.book-detail ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+.book-detail ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+.book-detail ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/* Media queries */
+@media screen and (max-width: 800px){
+    .image{
+        margin-right: 10rem;
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .book-detail .box-container .box .image {
+      flex-direction: column;
+      height: 34rem;
+      width: 30rem;
+    }
+  
+    .book-detail .box-container .box .large-img {
+      margin-bottom: 1rem;
+    }
+  
+    .book-detail .box-container .box .small-img {
+      margin-left: 0;
+    }
+    .large-img{
+        display: flex;
+        justify-content: center;
+    }
+    .small-img{
+        display: flex;
+        justify-content: center;
+    }
+    .small-img img{
+        width: 4rem;
+        height: 7rem;
+    }
+}

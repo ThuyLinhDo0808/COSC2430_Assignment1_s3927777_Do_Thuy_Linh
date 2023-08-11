@@ -1,0 +1,139 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Do Thuy Linh
+ID: Your student s3927777
+Acknowledgement:  
+OpenAI (2023) ChatGPT (May 24 version) [Large language model], accessed 11 August 2023. https://chat.openai.com/share/81f2e81f-f137-41b6-9881-39af1672ae3c
+Google Fonts (2011) Mulish, Pacifico, Moirai, Rubik, Google Fonts website, accessed 19 July 2023. https://fonts.google.com/
+Mr.Web Designer (2021) 'Create A Responsive E-Commerce Flower Shop Website Design Using Pure HTML & CSS Only' [video], Mr.Web Designer, YouTube website, accessed 19 July 2023. https://www.youtube.com/watch?v=cLOT0APQzDs&t=1325s
+W3Schools (n.d.) CSS Navigation Bar, W3Schools website, accessed 21 July 2023. https://www.w3schools.com/css/css_navbar.asp
+W3Schools (n.d.) CSS Icons, W3Schools website, accessed 21 July 2023. https://www.w3schools.com/css/css_icons.asp
+W3Schools (n.d.) CSS Forms, W3Schools website, accessed 27 July 2023. https://www.w3schools.com/css/css_form.asp
+Fonticons (n.d.) Font Awesome, Font Awesome website, accessed 23 July 2023. https://fontawesome.com/search
+Amazon (n.d.) Books, Amazon website, accessed 17 July. https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155
+Don Bookstore (n.d.) Privacy Policy/Terms of Use, Don Bookstore website, accessed 11 August 2023. https://www.donbookstore.com/donbook/site_terms_of_use.asp
+*/
+
+main {
+    margin: 50px 0;
+  }
+body{
+    background: bisque;
+    margin-top: 0;
+}
+.contact{
+    width: 80%;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 20px;
+    color: rgb(92, 64, 51);
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.required {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.checkbox-wrapper,
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-wrapper label,
+.radio-wrapper label {
+    margin-right: 20px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label:before {
+    content: "\2713";
+    font-size: 14px;
+    color: #29b6f6;
+    text-align: center;
+    line-height: 17px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px;
+    background-color: rgb(92, 64, 51);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: rgb(194, 175, 160);
+    color: #fff;
+}
+
+@media (max-width: 450px) {
+label {
+    display: block;
+    margin-bottom: 5px;
+    }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    margin-bottom: 10px;
+    }
+
+.checkbox-wrapper label,
+.radio-wrapper label {
+    margin-right: 10px;
+    }
+}
